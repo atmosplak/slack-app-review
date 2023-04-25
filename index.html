@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="apps">
+            <div class="review-tool-app">
+                <h1>Slack App Security Review Tool</h1>
+                <p class="sub-header">Use this tool to determine the security review requirements for an incoming app request</p>
+                <div class="review-tool-inst">
+                    <p>Instructions: 
+                        <ol>
+                            <li>Navigate to Slack <a href="https://etsy.slack.com/apps" target="_blank">App Directory</a> and enter app in search bar</li>
+                            <li>Click into the app to see more info</li>
+                            <li>Click the "Security & Compliance" tab to access the CSV file</li>
+                            <li>Download the CSV to your computer</li>
+                            <li>Upload the CSV file into the file uploader by clicking "Choose File" below</li>
+                            <li>Press the "Read CSV" button to determine security review requirements</li>
+                        </ol>
+                    </p>
+                </div>
+            
+                <div class="review-tool-btns">
+                    <input type="file" id="upload-csv" accept=".csv">
+                    
+                    <button id="btn-upload-csv" class="read-btn btn">Read CSV</button>
+                
+                    <p id="scopes" class="scopes">(Please select a file)</p>
+                        <button id="clear" class="btn clear">Clear CSV</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- <script src="appreview.js"></script> -->
+        <script src="errorHandling.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js" integrity="sha512-SGWgwwRA8xZgEoKiex3UubkSkV1zSE1BS6O4pXcaxcNtUlQsOmOmhVnDwIvqGRfEmuz83tIGL13cXMZn6upPyg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+        </script>
+    </body>
+</html>

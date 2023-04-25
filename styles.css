@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.apps {
+    display: grid;
+    height: 100vh;
+    /* border: 1px black solid; */
+    justify-content: center;
+    align-content: center;
+    background: rgb(248, 212, 144, 0.2);
+}
+
+.review-tool-inst {
+    line-height: 1.75em;
+}
+
+.review-tool-app > h1,
+.review-tool-app > p {
+    margin: 0;
+}
+
+.review-tool-app {
+    display: grid;
+    row-gap: 1em;
+    /* border: 1px solid black; */
+    padding: 2em;
+    background: white;
+}
+
+.review-tool-btns {
+    display: grid;
+    /* flex-direction: column; */
+    row-gap: 1em;
+}
+
+.btn {
+    width: 87px;
+}
+
+.clear {
+    align-items: center;
+}
+
+.review-tool-btns > .scopes {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.75em;
+    color: rgb(155, 0, 0);
+    /* border: 1px ridge grey; */
+    padding: .5em 0;
+    background: rgb(200, 200, 200, 0.1);
+}
+
+
+
+
+
+
